@@ -39,7 +39,7 @@ form.addEventListener("submit", e=>{
 }
 awaintingFetch();
 })
-
+console.log("probando")
 /*links 
 https://webdesign.tutsplus.com/es/tutorials/build-a-simple-weather-app-with-vanilla-javascript--cms-33893
 https://openweathermap.org/api*/
