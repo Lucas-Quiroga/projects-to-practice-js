@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#idApp{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20vh;
+}
+
+#h1title{
+    position: relative;
+    bottom: 10vh;
+}
+
+
+#conteinerAjax{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 3rem;
+}
