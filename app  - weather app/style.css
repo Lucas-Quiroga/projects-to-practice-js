@@ -24,3 +24,11 @@
     text-align: center;
     margin-top: 3rem;
 }
+
+.card{
+    background: #000000d0;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
