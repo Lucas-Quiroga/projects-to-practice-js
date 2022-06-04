@@ -48,10 +48,11 @@ form.addEventListener("submit", e=>{
     });
     form.reset();
     input.focus();
-    
+
     btn.addEventListener("click", ()=>{
-      contenedordeCards[0].remove();
+      contenedordeCards.reduce((acumulador, elemento) => acumulador - elemento.remove(),0);
     })
+    
       // contador++
       // let buttonbtn=e.target;
       // contenedordeCards[0].remove()+1;
