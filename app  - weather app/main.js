@@ -3,7 +3,6 @@ const form=document.getElementById("formApp");
 const input=document.getElementById("inputSearch");
 const btn=document.getElementById("buttonSearch");
 const sectionAjax=document.getElementById("conteinerAjax");
-const ul=document.getElementById("cities");
 
 function recargarBusqueda(){
   location.reload()
@@ -29,7 +28,7 @@ form.addEventListener("submit", e=>{
     .then(data => {
       const { main, name, sys, weather } = data;
       //guardamos el icono en una constante para volver a usarlo
-      const icon = `https://openweathermap.org/img/wn/${weather[0]["icon"]}@2x.png`;
+      const icon = `https://openweathermap.org/img/wn/${data.weather[0]["icon"]}@2x.png`;
         //creamos las cards
         const createCard=document.createElement("div");
         createCard.setAttribute("class","card");
