@@ -28,34 +28,36 @@ form.addEventListener("submit", e=>{
     .then(data => {
       const { main, name, sys, weather } = data;
       //guardamos el icono en una constante para volver a usarlo
-      const icon = `https://openweathermap.org/img/wn/${data.weather[0]["icon"]}@2x.png`;
+      const icon = `https://openweathermap.org/img/wn/${weather[0]["icon"]}@2x.png`;
         //creamos las cards
         const createCard=document.createElement("div");
         createCard.setAttribute("class","card");
-        createCard.style.width="18rem";
+        createCard.style.width="17rem";
         createCard.innerHTML=`
                               <img src="${icon}" class="card-img-top" alt="${weather[0]["main"]}">
                               <div class="card-body">
-                              <h5 class="card-title">${name} - ${sys.country}</h5>
+                              <h5 class="card-title">Weather in ${name} - ${sys.country}</h5>
                               <p class="card-text">Temperatura ${Math.round(main.temp_min)}<sup>°C</sup></p>
                               <figcaption>${weather[0]["description"]}</figcaption>
+                              <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Humidity: ${data.main["humidity"]}%</li>
+                              <li class="list-group-item">Wind speed: ${data.wind["speed"]}km/h</li>
+                              <li class="list-group-item">A third item</li>
+                              </ul>
                               </div>`
         document.body.style.backgroundImage=`url('https://source.unsplash.com/1920x1080/?${name}')`;
         sectionAjax.appendChild(createCard);
         contenedordeCards.push(createCard).target;
-        
-    });
-    form.reset();
-    input.focus();
-
-    btn.addEventListener("click", ()=>{
-      contenedordeCards.reduce((acumulador, elemento) => acumulador - elemento.remove(),0);
+      });
+      form.reset();
+      input.focus();
+  
+      btn.addEventListener("click", ()=>{
+        contenedordeCards.reduce((acumulador, elemento) => acumulador - elemento.remove(),0);
+      })
     })
-    
-      // contador++
-      // let buttonbtn=e.target;
-      // contenedordeCards[0].remove()+1;
-    
+      
    
-})
+
+    
 

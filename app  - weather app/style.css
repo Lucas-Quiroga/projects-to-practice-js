@@ -1,21 +1,21 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-main{
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    padding-top: 10em;
+main {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 10em;
 }
 
-#idApp{
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 20vh;
-    background: #000000d0;
+#idApp {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20vh;
+  background: #000000d0;
   color: white;
   padding: 2em;
   border-radius: 30px;
@@ -24,59 +24,67 @@ main{
   margin: 1em;
 }
 
-#idApp .card-body{
-    color: black;
+#idApp .card-body {
+  color: black;
 }
 
-#h1title{
-    position: relative;
-    top: 0em;
-    font-size: 1.5em;
+#h1title {
+  position: relative;
+  top: 0em;
+  font-size: 1.5em;
 }
 
-#h2title{
-    font-size: 1.5em;
-    margin-bottom: 1em;
+#h2title {
+  font-size: 1.5em;
+  margin-bottom: 1em;
 }
 
-#buttonSearch{
-    margin: 0.5em;
-    border-radius: 50%;
-    border: none;
-    height: 44px;
-    width: 44px;
-    outline: none;
-    background: #7c7c7c2b;
-    color: white;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
+#buttonSearch {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 50px;
+  width: 50px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
-#inputSearch{
-    border: none;
-    outline: none;
-    padding: 0.4em 1em;
-    border-radius: 24px;
-    background: #7c7c7c2b;
-    color: white;
-    font-family: inherit;
-    font-size: 105%;
-    width: calc(100% - 100px);
+#inputSearch {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
 }
 
-#conteinerAjax{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 3rem;
+#conteinerAjax {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3rem;
 }
 
-.card{
-    background: #000000d0;
-    border-radius: 30px;
-    width: 100%;
-    max-width: 420px;
-    margin: 1em;
+.card {
+  background: #000000d0;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+  opacity: 0.6;
+}
+
+.card-img-top {
+    background-color: lightblue;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 10rem;
 }
